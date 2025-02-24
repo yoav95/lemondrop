@@ -1,0 +1,58 @@
+{
+  "bags": [
+    {
+      "id": 1,
+      "name": "תיק כידון נווד",
+      "price": 350,
+      "img": "/images/1.jpg",
+      "colors":["90S Fantasy", "Vine Tree"],
+      "images":[],
+      "details": "תיק כידון מרווח עם רוכסנים עמידים למים וכיסים נגישים."
+    },
+    {
+      "id": 2,
+      "name": "תיק שלדה חוקר",
+      "price": 400,
+      "img": "/images/4.jpg",
+      "colors":["90S Fantasy", "Vine Tree"],
+      "images":[],
+      "details": "תיק שלדה קל משקל עם מספר תאים לאחסון יעיל."
+    },
+    {
+      "id": 3,
+      "name": "תיק אוכף שבילים",
+      "price": 450,
+      "img": "/images/2.jpg",
+      "colors":["90S Fantasy", "Vine Tree"],
+      "images":[],
+      "details": "תיק אוכף מאובטח ומתרחב, אידיאלי לטיולים ארוכים."
+    },
+    {
+      "id": 4,
+      "name": "תיק מזלג הרפתקה",
+      "price": 250,
+      "img": "/images/3.jpg",
+      "colors":["90S Fantasy", "Vine Tree"],
+      "images":[],
+      "details": "תיק מזלג קל משקל, מתאים לכלים, אוכל וציוד קטן."
+    },
+    {
+      "id": 5,
+      "name": "תיק עלי גשר מסע",
+      "price": 200,
+      "img": "/images/2.jpg",
+      "colors":["90S Fantasy", "Vine Tree"],
+      "images":[],
+      "details": "תיק קטן וקומפקטי עם גישה מהירה לחפצים חיוניים."
+    },
+    {
+      "id": 6,
+      "name": "Wander Pod Pocket bag",
+      "price": 220,
+      "img": "/images/5.jpg",
+      "colors":["90S Fantasy", "Wander vine", "Bazooka"],
+      "images":[],
+      "details": "תיק קטן וקומפקטי עם גישה מהירה לחפצים חיוניים."
+    }
+  ]
+}

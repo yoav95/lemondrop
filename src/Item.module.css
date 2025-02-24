@@ -1,0 +1,48 @@
+.item {
+    height: 500px;
+    transition: all 0.3s ease-in-out;
+    background-color:#2A4F6B;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    letter-spacing: 0.2px;
+    
+}
+
+.img {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1);
+    /* width: 100%; */
+    overflow: hidden;
+    height: 75%;
+    display: flex;
+  justify-content: center;  /* Center the image horizontally */
+  align-items: center;
+}
+.details {
+    color:white;
+    height: 25%;
+    padding:8px 0;
+    padding-right: 1rem;
+}
+
+.details h2 {
+    margin-top: 5px;
+    font-size: 18px;
+}
+.details p {
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 5px 0;
+}
+.image {
+    max-width: 100%; 
+  /* max-height: 100%;  */
+    object-fit: contain;  }

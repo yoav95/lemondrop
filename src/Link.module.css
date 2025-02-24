@@ -1,0 +1,16 @@
+.link {
+    position: relative;
+    color:#2A4F6B;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    min-width: 100px;
+    transition: color .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover {
+    color:#4894D0;
+}

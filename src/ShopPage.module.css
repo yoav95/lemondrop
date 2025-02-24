@@ -1,0 +1,43 @@
+.box {
+    width: 100%;
+    /* padding:10px; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.list {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* font-size: 14px; */
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.list li {
+    border-radius: 5px;
+    
+    min-width: 120px;
+    border:2px solid #2A4F6B;
+    padding: 6px 11px;
+    cursor: pointer;
+    color:2A4F6B;
+    transition: all .2s ease-in-out;
+}
+
+.list li:hover {
+    background-color: #2A4F6B;
+    color:#FFDF4D;
+}
+
+.list a {
+    display: flex;
+    align-items: center;
+    letter-spacing: .2px;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}

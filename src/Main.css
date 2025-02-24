@@ -1,0 +1,33 @@
+/* Reset all margins, paddings, and borders */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", serif;
+ 
+  }
+  
+  /* Remove default list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default button styles */
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  /* Remove default link styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Ensure full height */
+  html, body {
+    height: 100%;
+    font-family: sans-serif;
+  }
+  

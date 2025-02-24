@@ -1,0 +1,9 @@
+/* src/Wrapper.css */
+.wrapper {
+    width: 100%;
+    max-width: 1400px;         /* Standard width for most websites */
+    margin: 0 auto;            /* Centers the wrapper horizontally */
+    padding: 0 20px 0 20px;             /* Optional: Add padding for content spacing */
+    box-sizing: border-box;    /* Ensures padding does not affect the width */
+  }
+  

@@ -1,0 +1,23 @@
+.popup {
+    /* position: absolute; */
+    z-index: 100;
+    cursor: pointer;
+}
+.popup img{
+    position: absolute;
+    height:85vh;
+    /* width: 50vw; */
+    top:5vh;
+    left:25vw;
+}
+.fade {
+    cursor: pointer;
+    opacity: .6;
+    background-color: #2A4F6B;
+    z-index: 10;
+    top:0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
