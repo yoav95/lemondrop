@@ -55,10 +55,10 @@ function ItemPage() {
             
             </div>
             <div className={styles.images}>
-            <img onClick={() => handleImageClick("/images/1.jpg")} src="/images/1.jpg"/>
-            <img onClick={() => handleImageClick("/images/1.jpg")} src="/images/2.jpg"/>
-            <img onClick={() => handleImageClick("/images/1.jpg")} src="/images/3.jpg"/>
-            <img onClick={() => handleImageClick("/images/1.jpg")} src="/images/2.jpg"/>
+              {product.images.map((img) => (
+                <img key={`${product.id}-img`} onClick={() => handleImageClick(img)} src={img}/>
+              ))}
+
             </div>
             {isZoomed && (
         <ImageZoomPopup

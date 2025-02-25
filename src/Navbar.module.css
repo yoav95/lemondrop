@@ -71,7 +71,7 @@
 
 .cart:hover {
   background-color: #326c99;
-  color:#FFDF4D
+  color:#FFDF4D;
 }
 .active {
   color:#FFDF4D;
@@ -84,6 +84,28 @@
 
 .icon:hover {
   color:#5F9DC0;
+}
+
+@media (max-width: 768px) {
+  .header {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #2A4F6B;
+    animation-delay: 2.5s; /* Starts immediately */
+  }
+  .logo {
+    margin-top: 1.5rem;
+  }
+  .ul {
+    margin-bottom: 1.5rem;    /* Removes default padding */
+  }
+  .icon {
+    display: none;
+  }
 }
 
 @keyframes blink {

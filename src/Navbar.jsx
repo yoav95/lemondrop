@@ -46,7 +46,7 @@ function Navbar() {
           <li><a onClick={triggerSound}  href="https://www.instagram.com/madebylemondrop/" target="_blank" ><div className={styles.icon}><FaInstagram size={'20px'}/></div></a></li>
               <li onClick={triggerSound} className={`${styles.li} ${location.pathname === "/contact" ? styles.active : ""}`}><NavLink   to="/contact" color="#2A4F6B">יצירת קשר</NavLink></li>
               <li onClick={triggerSound} className={`${styles.li} ${location.pathname === "/custom" ? styles.active : ""}`}><NavLink to="/custom" color="#2A4F6B">תיקים בהתאמה אישית</NavLink></li>
-              <li onClick={triggerSound} className={`${styles.li} ${location.pathname === "/about" ? styles.active : ""}`}><NavLink   to="/about" color="#2A4F6B">מידע</NavLink></li>
+              <li onClick={triggerSound} className={`${styles.li} ${location.pathname === "/info" ? styles.active : ""}`}><NavLink   to="/info" color="#2A4F6B">מידע</NavLink></li>
               <li onClick={triggerSound} className={`${styles.li} ${location.pathname === "/shop" ? styles.active : ""}`}><NavLink  to="/shop" color="#2A4F6B">חנות</NavLink></li>
               <li onClick={triggerSound} ><NavLink to="/cart"><div className={styles.cart}><MdOutlineShoppingCart size='25px' /><p>1</p></div></NavLink></li>
               

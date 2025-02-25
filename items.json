@@ -1,57 +1,43 @@
 {
   "bags": [
     {
-      "id": 1,
-      "name": "תיק כידון נווד",
-      "price": 350,
-      "img": "/images/1.jpg",
+      "id": 4,
+      "name": "תיק שלדה עליון",
+      "price": 180,
+      "img": "/images/items/top2.jpg",
       "colors":["90S Fantasy", "Vine Tree"],
-      "images":[],
-      "details": "תיק כידון מרווח עם רוכסנים עמידים למים וכיסים נגישים."
+      "images":["/images/items/top1.jpg","/images/items/top2.jpg","/images/items/top5.jpg","/images/items/top4.jpg"],
+      "details": "תיק שלדה עליון מתלבש על הצינור העליון של השלדה ומאפשר גישה נוכה תוך כדי נסיעה. התיק ניתן להתאמה אישית נוספת"
+    },
+    {
+      
+      "id": 1,
+      "name": "תיק שלדה מלא",
+      "price": 450,
+      "img": "/images/items/framefull4.jpg",
+      "colors":["90S Fantasy", "Vine Tree"],
+      "images":["/images/items/framefull1.jpg","/images/items/framefull2.jpg","/images/items/framefull3.jpg","/images/items/framefull4.jpg"],
+      "details": "אחד התיקים הכי מרכזיים בכל חויית בייקפקינג. התאמה אישית של התיק לשלדת האופניים לא רק תנצל מקום, אלא גם תיצור מראה שיסחוט מחמאות"
     },
     {
       "id": 2,
-      "name": "תיק שלדה חוקר",
-      "price": 400,
-      "img": "/images/4.jpg",
+      "name": "תיק שלדה חצי",
+      "price": 350,
+      "img": "/images/items/framefull2.jpg",
       "colors":["90S Fantasy", "Vine Tree"],
-      "images":[],
-      "details": "תיק שלדה קל משקל עם מספר תאים לאחסון יעיל."
+      "images":["/images/items/framefull1.jpg","/images/items/framefull2.jpg","/images/items/framefull3.jpg","/images/items/framefull4.jpg"],
+      "details": "אחד התיקים הכי מרכזיים בכל חויית בייקפקינג. התאמה אישית של התיק לשלדת האופניים לא רק תנצל מקום, אלא גם תיצור מראה שיסחוט מחמאות"
     },
-    {
-      "id": 3,
-      "name": "תיק אוכף שבילים",
-      "price": 450,
-      "img": "/images/2.jpg",
-      "colors":["90S Fantasy", "Vine Tree"],
-      "images":[],
-      "details": "תיק אוכף מאובטח ומתרחב, אידיאלי לטיולים ארוכים."
-    },
-    {
-      "id": 4,
-      "name": "תיק מזלג הרפתקה",
-      "price": 250,
-      "img": "/images/3.jpg",
-      "colors":["90S Fantasy", "Vine Tree"],
-      "images":[],
-      "details": "תיק מזלג קל משקל, מתאים לכלים, אוכל וציוד קטן."
-    },
-    {
-      "id": 5,
-      "name": "תיק עלי גשר מסע",
-      "price": 200,
-      "img": "/images/2.jpg",
-      "colors":["90S Fantasy", "Vine Tree"],
-      "images":[],
-      "details": "תיק קטן וקומפקטי עם גישה מהירה לחפצים חיוניים."
-    },
+    
+    
+    
     {
       "id": 6,
       "name": "Wander Pod Pocket bag",
       "price": 220,
-      "img": "/images/5.jpg",
+      "img": "/images/items/wanderpod.png",
       "colors":["90S Fantasy", "Wander vine", "Bazooka"],
-      "images":[],
+      "images":["/images/items/framefull1.jpg","/images/items/framefull2.jpg","/images/items/framefull3.jpg","/images/items/framefull4.jpg"],
       "details": "תיק קטן וקומפקטי עם גישה מהירה לחפצים חיוניים."
     }
   ]
