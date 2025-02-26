@@ -15,7 +15,7 @@ function App() {
   return (
     <>
     <Navbar />
-      <Wrapper>
+      {/* <Wrapper> */}
         <Routes>
         <Route path='/' element={<HomePage />}/>
           <Route path='/shop' element={<ShopPage />}/>
@@ -27,7 +27,7 @@ function App() {
         </Routes>
         {/* <ShopPage /> */}
         {/* <ItemPage /> */}
-      </Wrapper>
+      {/* </Wrapper> */}
     </>
   )
 }

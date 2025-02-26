@@ -1,11 +1,10 @@
 .header {
-  padding:0 20px;
-    height: 105px;
+  padding:14px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2A4F6B;
+    /* background-color: #2A4F6B; */
   animation-delay: 2.5s; /* Starts immediately */
 }
 
@@ -25,7 +24,7 @@
     padding:10px;
     margin-left: 20px; /* Space between list items */
     font-size: 15px;
-    color:white;
+    color:#2A4F6B;
     transition: color .2s ease-in-out;
     font-weight: normal!important;
   }
@@ -37,13 +36,13 @@
   }
 
 .logo {
-    width: 190px;
+    min-width: 230px;
     animation-delay: 2.5s; /* Starts immediately */
     
 }
 .icon {
   margin-left:1rem;
-  color:white;
+  color:#2A4F6B;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,12 +52,12 @@
 
 .cart {
   margin-left:1rem;
-  color:#2A4F6B;
+  color:#FFDF4D;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: color .2s ease-in-out;
-  background-color: #FFDF4D;
+  background-color: #2A4F6B;
   padding:.5rem;
   border-radius: .5rem;
   transition: all .2s ease-in-out;
@@ -70,11 +69,11 @@
 }
 
 .cart:hover {
-  background-color: #326c99;
-  color:#FFDF4D;
+  color: #326c99;
+  background-color:#FFDF4D;
 }
 .active {
-  color:#FFDF4D;
+  font-weight: bolder!important;
 }
 
 
@@ -86,25 +85,58 @@
   color:#5F9DC0;
 }
 
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger {
+  color:#2A4F6B;
+  cursor: pointer;
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   .header {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #2A4F6B;
-    animation-delay: 2.5s; /* Starts immediately */
+height: auto;
+/* padding:.2rem .5rem; */
+padding:14px 0;
+      
   }
   .logo {
-    margin-top: 1.5rem;
-  }
-  .ul {
-    margin-bottom: 1.5rem;    /* Removes default padding */
+    
   }
   .icon {
-    display: none;
+    color:white;
+  }
+  .ul {
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+    visibility: hidden;
+    flex-flow: column;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A4F6B;
+    gap:20px;
+    transition: .2s all ease-in-out;
+  }
+  .ul.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .ul .li {
+    color: white;
+  }
+  .burger {
+    visibility: visible;
+  }
+  .icon {
+    
   }
 }
 

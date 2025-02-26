@@ -1,15 +1,15 @@
 /* src/Wrapper.css */
 .wrapper {
     /* width: 100%; */
-    max-width: 1400px;         /* Standard width for most websites */
-    margin: 0 auto;            /* Centers the wrapper horizontally */
-    padding: 0 20px 0 20px;             /* Optional: Add padding for content spacing */
+    max-width: 1600px;         /* Standard width for most websites */
+    margin: 0 auto;   
+    padding:0 1rem;
     box-sizing: border-box;    /* Ensures padding does not affect the width */
   }
   
   @media (max-width: 768px) {
 .wrapper {
   margin:0;
-  padding: 0;
+  padding:0 14px;
 }
   }

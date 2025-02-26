@@ -1,12 +1,12 @@
 .page {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     padding-bottom: 80px;
     direction: rtl; /* Right-to-left text */
     text-align: right; /* Align the text to the right */
     font-size: 24px;
     color:#2A4F6B;
     /*  */
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 
 }
 
@@ -31,3 +31,30 @@
 
 
 
+@media (max-width: 768px) {
+    .page {
+    
+    }
+    
+    .page h1{
+        width: 50%;
+        margin-top:2rem;
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+    
+    .page h2{
+        line-height: 1.5rem;
+        width: 60%;
+        margin-top:.5rem;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    
+    .page p{
+        width: 80%;
+        line-height: 1.5rem;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+}
