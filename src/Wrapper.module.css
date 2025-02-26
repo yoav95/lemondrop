@@ -3,7 +3,7 @@
     /* width: 100%; */
     max-width: 1600px;         /* Standard width for most websites */
     margin: 0 auto;   
-    padding:0 1rem;
+    /* padding:0 1rem; */
     box-sizing: border-box;    /* Ensures padding does not affect the width */
   }
   
