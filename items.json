@@ -39,6 +39,15 @@
       "colors":["90S Fantasy", "Wander vine", "Bazooka"],
       "images":["/images/items/framefull1.jpg","/images/items/framefull2.jpg","/images/items/framefull3.jpg","/images/items/framefull4.jpg"],
       "details": "תיק קטן וקומפקטי עם גישה מהירה לחפצים חיוניים."
+    },
+    {
+      "id": 7,
+      "name": "פאוץ' ריצה|רכיבה",
+      "price": 150,
+      "img": "/images/items/run1.JPG",
+      "colors":["90S Fantasy", "Wander vine", "Bazooka"],
+      "images":["/images/items/run1.JPG","/images/items/run2.JPG","/images/items/run3.JPG","/images/items/run4.JPG"],
+      "details": "תיק קטן וקומפקטי עם גישה מהירה לחפצים חיוניים."
     }
   ]
 }

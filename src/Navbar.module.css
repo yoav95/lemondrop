@@ -76,9 +76,11 @@
   font-weight: bolder!important;
 }
 
-
-.logo.popping {
-  animation: pop 2.5s infinite ease-in-out; /* Apply blink animation */
+.svg.popping {
+  animation: pop 2.5s infinite ease-in-out;
+}
+.svg.popping {
+  /* animation: pop 2.5s infinite ease-in-out;  */
 }
 
 .icon:hover {
@@ -157,7 +159,7 @@ padding:14px 0;
     transform: scale(1);
   }
   50%{
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   100%{
     transform: scale(1);
