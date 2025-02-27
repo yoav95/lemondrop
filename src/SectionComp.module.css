@@ -1,0 +1,11 @@
+.comp {
+    cursor: pointer;
+    padding:1rem ;
+    border-radius: 12px;
+    /* background-color:#2A4F6B; */
+    /* color:white; */
+}
+
+.comp:hover {
+    
+}

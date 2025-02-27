@@ -9,11 +9,11 @@ function ShopPage() {
       
     return (
         <Page>
-            <div className={styles.box}>
+            {/* <div className={styles.box}>
                 <ul className={styles.list}>
                     {itemsArray.map(item => (<li  key={item.id}><Link to={`/shop/${item.id}`}>{item.name}</Link></li>))}
                 </ul>
-            </div>
+            </div> */}
             <ItemsView />
 
         </Page>

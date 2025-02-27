@@ -107,7 +107,7 @@ padding:14px 0;
       
   }
   .logo {
-    
+    min-width: 190px;
   }
   .icon {
     color:white;
@@ -141,6 +141,7 @@ padding:14px 0;
     
   }
 }
+
 
 @keyframes blink {
   0% {

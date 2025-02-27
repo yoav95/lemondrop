@@ -9,7 +9,7 @@
     width: 40%;
 }
 
-.text h1 {
+/* .text h1 {
     font-size: 30px;
     margin-bottom: 7px;
 }
@@ -19,7 +19,7 @@
     letter-spacing: .6px;
     line-height: 1.4rem;
     margin-bottom: 1rem;
-}
+} */
 .text input[type="number"] {
     
     width: 60px;
@@ -102,4 +102,24 @@
 .color label {
   margin-left: 1rem;
   font-size: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+  .box {
+    flex-flow: column;
+
+  }
+  .images {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+  gap: 10px; /* Space between images */
+    overflow: hidden;
+}
+.text {
+  width: 100%;
+}
 }

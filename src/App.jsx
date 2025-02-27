@@ -9,13 +9,16 @@ import CustomPage from './CustomPage.jsx'
 import './App.css'
 import InfoPage from './InfoPage.jsx'
 import Cart from './Cart.jsx'
+import { CartProvider } from "./context/CartContext";
 
 function App() {
  
   return (
     <>
-    <Navbar />
+    
       {/* <Wrapper> */}
+        <CartProvider>
+        <Navbar />
         <Routes>
         <Route path='/' element={<HomePage />}/>
           <Route path='/shop' element={<ShopPage />}/>
@@ -25,6 +28,7 @@ function App() {
           <Route path='/contact' element={<ContactPage />}/>
           <Route path="/shop/:id" element={<ItemPage />} />
         </Routes>
+        </CartProvider>
         {/* <ShopPage /> */}
         {/* <ItemPage /> */}
       {/* </Wrapper> */}

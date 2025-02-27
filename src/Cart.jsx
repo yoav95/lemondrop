@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import styles from './Cart.module.css'
 import Page from "./Page";
+import { useCart } from "./context/CartContext";
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([
-    { id: 1, name: "Lemon Bag", price: 50, quantity: 1 },
-    { id: 2, name: "Orange Backpack", price: 70, quantity: 2 },
-  ]);
+  const { cartItems } = useCart();
+  
 
   // Update quantity of an item
   const updateQuantity = (id, quantity) => {

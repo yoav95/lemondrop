@@ -4,5 +4,18 @@ import svgr from '@svgr/rollup';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),svgr()],
+  plugins: [react(),svgr({
+    svgo: true,
+    svgoConfig: {
+      plugins: [
+        {
+          name: 'prefixIds',
+          params: {
+            prefix: 'x', // Customize this
+            prefixIds: true,
+          },
+        },
+      ],
+    },
+  }),],
 })

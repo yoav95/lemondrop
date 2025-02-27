@@ -4,10 +4,15 @@ import { useParams } from "react-router-dom";
 import ImageZoomPopup from "./ImageZoomPopup.jsx";
 import bagsData from '../items.json';
 import { useState } from "react";
+import { useCart } from "./context/CartContext";
+
+
+
 function ItemPage() {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomedImageSrc, setZoomedImageSrc] = useState('');
     const {id} = useParams();
+    const { addToCart } = useCart();
 
 
     const handleImageClick = (largeImageSrc) => {
@@ -50,13 +55,13 @@ function ItemPage() {
           
             <input type="number" id="amount" name="amount" min="1" step="1" value="1" />
             <h2 className={styles.price}>{product.price}</h2>
-                <button>הוסף לעגלה</button>
+                <button onClick={() => addToCart(product)}>הוסף לעגלה</button>
             </div>
             
             </div>
             <div className={styles.images}>
               {product.images.map((img) => (
-                <img key={`${product.id}-img`} onClick={() => handleImageClick(img)} src={img}/>
+                <img key={`${product.name} ${product.id}`} onClick={() => handleImageClick(img)} src={img}/>
               ))}
 
             </div>
