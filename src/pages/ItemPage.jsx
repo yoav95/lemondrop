@@ -1,16 +1,18 @@
-import Page from "./Page";
+import Page from "./Page.jsx";
 import styles from './ItemPage.module.css';
 import { useParams } from "react-router-dom";
-import ImageZoomPopup from "./ImageZoomPopup.jsx";
-import bagsData from '../items.json';
+import ImageZoomPopup from "../components/ImageZoomPopup.jsx";
+import bagsData from '../../items.json';
 import { useState } from "react";
-import { useCart } from "./context/CartContext";
-
+import { useCart } from "../context/CartContext.jsx";
+import createOrder from "../helpers/createOrder.js";
+import { Toaster, toast } from "react-hot-toast";
 
 
 function ItemPage() {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomedImageSrc, setZoomedImageSrc] = useState('');
+  const [selectedColor, setSelectedColor] = useState('');
     const {id} = useParams();
     const { addToCart } = useCart();
 
@@ -18,6 +20,15 @@ function ItemPage() {
     const handleImageClick = (largeImageSrc) => {
       setZoomedImageSrc(largeImageSrc);
       setIsZoomed(true); // Show the popup
+    };
+    const handleAddToCart = () => {
+      const order = createOrder({...product, color:selectedColor})
+      addToCart(order)
+      toast.success("הפריט נוסף לעגלה!");
+    }
+
+    const handleColorChange = (event) => {
+      setSelectedColor(event.target.value);
     };
     const itemsArray = bagsData.bags;
     const product = itemsArray.find(item => item.id === parseInt(id))
@@ -31,31 +42,15 @@ function ItemPage() {
             <p>{product.details}</p>
             <div className={styles.color}>
               <label>בחירת צבע</label>
-            <select id="type" name="color">
+            <select id="type" name="color" value={selectedColor} onChange={handleColorChange}>
               {product.colors.map((color) => (<option key={color} value={color}>{color}</option>))}
   
 </select>
             </div>
-{/* <div className={styles.custom}>
-                <h2>התאמה אישית</h2>
-                <h3>סוג בד</h3>
-                <select id="type" name="type">
-  <option value="type1">קורדורה</option>
-  <option value="type2">ריפסטופ ניילון</option>
-  <option value="type3">XPAC</option>
-</select>
-<h3>סוג רוכסן</h3>
-                <select id="type" name="type">
-  <option value="type1">דוחה מים YKK</option>
-  <option value="type2">עמיד מים YKK</option>
-  <option value="type3">רוכסן רגיל YKK</option>
-</select>
-            </div> */}
           <div className={styles.control}>
           
-            <input type="number" id="amount" name="amount" min="1" step="1" value="1" />
             <h2 className={styles.price}>{product.price}</h2>
-                <button onClick={() => addToCart(product)}>הוסף לעגלה</button>
+                <button onClick={() => handleAddToCart()}>הוסף לעגלה</button>
             </div>
             
             </div>
@@ -72,7 +67,7 @@ function ItemPage() {
         />
       )}
             </div>
-
+            <Toaster />
         </Page>
     )
   }

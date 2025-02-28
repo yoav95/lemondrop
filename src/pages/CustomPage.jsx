@@ -5,7 +5,7 @@ import Page from './Page'
 const CustomPage = () => {
   return (
     <>
-    <div className={styles.image}><img src="/images/items/framefull4.jpg"/></div>
+    <div className={styles.image}><img src="/images/image.jpg"/></div>
     <Page>
     
             <div className={styles.details}>

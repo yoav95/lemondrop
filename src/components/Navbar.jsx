@@ -1,15 +1,15 @@
 import styles from "./Navbar.module.css";
 // import Link from "./Link";
 import { NavLink, Link, useLocation  } from "react-router-dom";
-import { ReactComponent as ReactLogo } from './assets/logop.svg'
+import { ReactComponent as ReactLogo } from '../assets/logop.svg'
 
-import Wrapper from "./Wrapper";
+import Wrapper from "../helpers/Wrapper";
 import { FaInstagram  } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { useEffect, useState } from "react";
-import SoundPlayer from './SoundPlayer'; // Import your sound player component
+import SoundPlayer from '../helpers/SoundPlayer'; // Import your sound player component
 import { TfiMenu } from "react-icons/tfi";
-import { useCart } from "./context/CartContext";
+import { useCart } from "../context/CartContext";
 
 
 function Navbar() {
@@ -67,9 +67,10 @@ function Navbar() {
               <li onClick={triggerSound} className={`${styles.li}`}><NavLink to="/custom" color="#2A4F6B">תיקים בהתאמה אישית</NavLink></li>
               <li onClick={triggerSound} className={`${styles.li}`}><NavLink   to="/info" color="#2A4F6B">מידע</NavLink></li>
               <li onClick={triggerSound} className={`${styles.li}`}><NavLink  to="/shop" color="#2A4F6B">חנות</NavLink></li>
-              <li onClick={triggerSound} ><NavLink to="/cart"><div className={styles.cart}><MdOutlineShoppingCart size='25px' /><p>{totalItems}</p></div></NavLink></li>
+              
               
           </ul>
+          <div className={styles.cartbox} onClick={triggerSound} ><NavLink to="/cart"><div className={styles.cart}><MdOutlineShoppingCart size='25px' /><p>{totalItems}</p></div></NavLink></div>
           <div className={styles.burger} onClick={toggleMenu}><TfiMenu size={25}/></div>
           </div>
           

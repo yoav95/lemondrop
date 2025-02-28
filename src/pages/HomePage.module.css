@@ -1,6 +1,6 @@
 .image {
     width: 100vw;
-    height: 600px;
+    height: 400px;
     background-size: cover;
     background-position: center center;  /* Center horizontally & vertically */
     background-repeat: no-repeat;

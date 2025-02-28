@@ -1,8 +1,8 @@
 import Item from './Item';
 import styles from './ItemsView.module.css';
-import bagsData from '../items.json'; // Adjust path based on where the JSON is located
+import bagsData from '../../items.json'; // Adjust path based on where the JSON is located
 import { useState } from 'react';
-import SoundPlayer from './SoundPlayer';
+import SoundPlayer from '../helpers/SoundPlayer';
 // load items here
 function ItemsView({}) {
   const [playSound, setPlaySound] = useState(false);

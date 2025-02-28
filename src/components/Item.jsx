@@ -1,5 +1,5 @@
 import styles from './Item.module.css'
-import TruncatedText from './TruncatedText'
+import TruncatedText from '../helpers/TruncatedText'
 function Item({id, name, price, img, details,handler }) {
     const delayChange = () => {
         handler()

@@ -1,14 +1,14 @@
-import ItemPage from './ItemPage.jsx'
-import Navbar from './Navbar.jsx'
-import ShopPage from './ShopPage.jsx'
+import ItemPage from './pages/ItemPage.jsx'
+import Navbar from './components/Navbar.jsx'
+import ShopPage from './pages/ShopPage.jsx'
 import { Routes, Route } from 'react-router-dom'
-import Wrapper from './Wrapper.jsx'
-import HomePage from './HomePage.jsx'
-import ContactPage from './ContactPage.jsx'
-import CustomPage from './CustomPage.jsx'
+import Wrapper from './helpers/Wrapper.jsx'
+import HomePage from './pages/HomePage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import CustomPage from './pages/CustomPage.jsx'
 import './App.css'
-import InfoPage from './InfoPage.jsx'
-import Cart from './Cart.jsx'
+import InfoPage from './pages/InfoPage.jsx'
+import Cart from './components/Cart.jsx'
 import { CartProvider } from "./context/CartContext";
 
 function App() {

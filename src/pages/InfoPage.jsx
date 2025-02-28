@@ -1,6 +1,6 @@
 import React from 'react'
 import Page from './Page'
-import SectionComp from './SectionComp'
+import SectionComp from '../helpers/SectionComp.jsx'
 
 const InfoPage = () => {
   return (

@@ -1,8 +1,7 @@
-import ItemsView from "./ItemsView"
-import { Link } from "react-router-dom";
-import Page from "./Page"
+import ItemsView from "../components/ItemsView.jsx"
+import Page from "./Page.jsx"
 import styles from './ShopPage.module.css'
-import bagsData from '../items.json'; // Adjust path based on where the JSON is located
+import bagsData from '../../items.json'; // Adjust path based on where the JSON is located
 
 function ShopPage() {
     const itemsArray = (bagsData.bags);
