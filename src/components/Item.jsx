@@ -3,7 +3,7 @@ import TruncatedText from '../helpers/TruncatedText'
 function Item({id, name, price, img, details,handler }) {
     const delayChange = () => {
         handler()
-        window.location.href = `/shop/${id}`;
+        window.location.href = `/shop/item/${id}`;
         // setTimeout(() => {
         //     window.location.href = `/shop/${id}`;
         // }, 250)

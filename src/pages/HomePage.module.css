@@ -3,19 +3,45 @@
     top:0;
     left:0;
     width: 100%;
-    height: 100%;
-}
-.image {
     height: 400px;
+}
+
+.image {
+    height: 100%;
     object-fit: contain;  
     overflow: hidden;
-    background-position: center;
+    background-position:bottom
 }
 .image img {
     object-fit: cover; 
     width: 100%;
     height: 100%;
     
+}
+
+.color {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A4F6B;
+    opacity: .6;
+}
+.color1 {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A4F6B;
+    opacity: .4;
+    z-index: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.color1:hover {
+    opacity: .1;
 }
 
 .card {
@@ -25,4 +51,77 @@
 
 .card h1, p {
     width: 100%;
+}
+
+
+/* ===== */
+
+.box {
+    position: absolute;
+    top:400px;
+    left:0;
+    width: 100vw;
+}
+
+.menu {
+    
+    display: flex;
+    justify-content: center;
+    gap: 14px; /* Space between squares */
+    padding: 20px;
+    width: 100%;
+}
+
+.menuItem {
+    width: 30%; /* Each square takes 30% of the width */
+    aspect-ratio: 1 / 1; /* Makes it a perfect square */
+    position: relative;
+    background: #f0f0f0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.menuItem .image {
+    transition: all .2s ease-in-out;
+}
+
+.menuItem:hover .image{
+    transform: scale(1.2);
+}
+
+.image {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the square */
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menuItem {
+        width: 100%; /* Each square takes 30% of the width */
+        aspect-ratio: 1 / 1; /* Makes it a perfect square */
+        position: relative;
+        background: #f0f0f0;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .menu {
+        margin-top: 20px;
+        display: flex;
+        padding: 0;
+        width: 100%;
+    }
 }

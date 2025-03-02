@@ -36,6 +36,7 @@
   }
 
 .logo {
+  z-index: 100;
     width: 260px;
     animation-delay: 2.5s; /* Starts immediately */
     
