@@ -8,13 +8,7 @@ export default defineConfig({
     svgo: true,
     svgoConfig: {
       plugins: [
-        {
-          name: 'prefixIds',
-          params: {
-            prefix: 'x', // Customize this
-            prefixIds: true,
-          },
-        },
+       
       ],
     },
   }),],

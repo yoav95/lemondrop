@@ -49,7 +49,7 @@ function ItemPage() {
             </div>
           <div className={styles.control}>
           
-            <h2 className={styles.price}>{product.price}</h2>
+            <h2 className={styles.price}>{product.price} ₪</h2>
                 <button onClick={() => handleAddToCart()}>הוסף לעגלה</button>
             </div>
             

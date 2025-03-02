@@ -3,9 +3,10 @@ import TruncatedText from '../helpers/TruncatedText'
 function Item({id, name, price, img, details,handler }) {
     const delayChange = () => {
         handler()
-        setTimeout(() => {
-            window.location.href = `/shop/${id}`;
-        }, 250)
+        window.location.href = `/shop/${id}`;
+        // setTimeout(() => {
+        //     window.location.href = `/shop/${id}`;
+        // }, 250)
     }
     return (
     <div className={styles.item} onClick={delayChange} >
@@ -14,7 +15,7 @@ function Item({id, name, price, img, details,handler }) {
         <h2>{name}</h2>
         <TruncatedText text={details} maxLength={100} />
 
-        <p>{price}₪ </p>
+        <p>{price} ₪ </p>
         </div>
     </div>
 

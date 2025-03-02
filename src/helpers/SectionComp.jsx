@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styles from './SectionComp.module.css'
-const SectionComp = ({ children, heading, type }) => {
+import { AiOutlineArrowLeft } from "react-icons/ai";const SectionComp = ({ children, heading, type }) => {
     const [open, setOpen] = useState(type === 'h1' ? true : false)
     const toggle = () => {
         setOpen((prev) => !prev)
@@ -12,7 +12,7 @@ const SectionComp = ({ children, heading, type }) => {
       };
   return (
     <div className={styles.comp} onClick={handleChildClick}>
-        {type === 'h1' ? <h1>{heading}</h1> : <h2>{heading}</h2>}
+        {type === 'h1' ? <div className={styles.arrow}><h1>{heading}</h1><AiOutlineArrowLeft className={open ? `${styles.icon} ${styles.open}`: styles.icon}size={25} /></div> : <div className={styles.arrow}><h2>{heading}</h2>< AiOutlineArrowLeft className={open ? `${styles.icon} ${styles.open}`: styles.icon} size={25}/></div>}
         {open ? <>{children}</> : null}
     </div>
   )

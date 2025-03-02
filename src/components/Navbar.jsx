@@ -1,21 +1,20 @@
 import styles from "./Navbar.module.css";
 // import Link from "./Link";
 import { NavLink, Link, useLocation  } from "react-router-dom";
-import { ReactComponent as ReactLogo } from '../assets/logop.svg'
-
+import { ReactComponent as ReactLogo } from '../assets/logo.svg'
+import { useCart } from "../context/CartContext.jsx";
 import Wrapper from "../helpers/Wrapper";
 import { FaInstagram  } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { useEffect, useState } from "react";
 import SoundPlayer from '../helpers/SoundPlayer'; // Import your sound player component
-import { TfiMenu } from "react-icons/tfi";
-import { useCart } from "../context/CartContext";
+import { Spin as Hamburger } from 'hamburger-react'
 
 
 function Navbar() {
   const [isBlinking, setIsBlinking] = useState(false);
   const [playSound, setPlaySound] = useState(false);
-  const [showMenu, setShowMenu] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const location = useLocation();
     const { cartItems } = useCart();
     const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -35,8 +34,7 @@ function Navbar() {
     setIsBlinking(false);
   };
   const toggleMenu  = () => {
-    
-    setShowMenu((prev) => !prev)
+    setIsOpen((prev) => !prev)
 
   }
 
@@ -54,30 +52,39 @@ function Navbar() {
   
     return (
       <>
-      <Wrapper>
+      
         
-        <header className={`${styles.header}`}>
-            
+        <header className={location.pathname === "/" ? `${styles.header} ${styles.transparent}`   : styles.header}>
+          
+        <Wrapper>
+        <div className={styles.nv} >
           <div  className={`${styles.logo}`}>< Link to="/"><ReactLogo className={isBlinking ? `${styles.svg} ${styles.popping}` : styles.svg} id="svg"/></Link></div>
           <div className={styles.box}>
-          <ul className={showMenu ? `${styles.ul} ${styles.show}` : styles.ul} onClick={toggleMenu}>
+          <div className={styles.cartbox} onClick={triggerSound} ><NavLink to="/cart"><div className={styles.cart}><MdOutlineShoppingCart size={40} /><p>{totalItems}</p></div></NavLink></div>
+          <ul className={isOpen ? `${styles.ul} ${styles.show}` : styles.ul} onClick={toggleMenu} >
           
           <li><a onClick={triggerSound}  href="https://www.instagram.com/madebylemondrop/" target="_blank" ><div className={styles.icon}><FaInstagram size={'20px'}/></div></a></li>
-              <li onClick={triggerSound} className={`${styles.li}`}><NavLink   to="/contact" color="#2A4F6B">יצירת קשר</NavLink></li>
-              <li onClick={triggerSound} className={`${styles.li}`}><NavLink to="/custom" color="#2A4F6B">תיקים בהתאמה אישית</NavLink></li>
-              <li onClick={triggerSound} className={`${styles.li}`}><NavLink   to="/info" color="#2A4F6B">מידע</NavLink></li>
-              <li onClick={triggerSound} className={`${styles.li}`}><NavLink  to="/shop" color="#2A4F6B">חנות</NavLink></li>
+              <li onClick={triggerSound} className={`${styles.li}`}><NavLink className={({ isActive }) =>
+              isActive ? styles.active : null
+            } to="/contact" color="#2A4F6B">יצירת קשר</NavLink></li>
+              <li onClick={triggerSound} className={`${styles.li}`}><NavLink className={({ isActive }) =>
+              isActive ? styles.active : null}  to="/custom" color="#2A4F6B">תיקים בהתאמה אישית</NavLink></li>
+              <li onClick={triggerSound} className={`${styles.li}`}><NavLink  className={({ isActive }) =>
+              isActive ? styles.active : null} to="/info" color="#2A4F6B">מידע</NavLink></li>
+              <li onClick={triggerSound} className={`${styles.li}`}><NavLink className={({ isActive }) =>
+              isActive ? styles.active : null} to="/shop" color="#2A4F6B">חנות</NavLink></li>
               
               
           </ul>
-          <div className={styles.cartbox} onClick={triggerSound} ><NavLink to="/cart"><div className={styles.cart}><MdOutlineShoppingCart size='25px' /><p>{totalItems}</p></div></NavLink></div>
-          <div className={styles.burger} onClick={toggleMenu}><TfiMenu size={25}/></div>
-          </div>
           
+          <div className={styles.burger} onClick={toggleMenu}><Hamburger size={20} toggled={isOpen} onClick={() => toggleMenu()} /></div>
+          </div>
+          </div>
+          </Wrapper>
           
       </header>
       <SoundPlayer soundFile="/sounds/drop.mp3" play={playSound} />
-      </Wrapper>
+      
       </>
     )
   }

@@ -1,11 +1,11 @@
 .header {
-  padding:14px 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: #2A4F6B; */
-  animation-delay: 2.5s; /* Starts immediately */
+  position: relative;
+    background-color: #2A4F6B;
+  z-index: 5;
+}
+
+.transparent {
+  background-color: transparent;
 }
 
 .header.blinking {
@@ -24,7 +24,7 @@
     padding:10px;
     margin-left: 20px; /* Space between list items */
     font-size: 15px;
-    color:#2A4F6B;
+    color:white;
     transition: color .2s ease-in-out;
     font-weight: normal!important;
   }
@@ -36,35 +36,44 @@
   }
 
 .logo {
-    min-width: 230px;
+    width: 260px;
     animation-delay: 2.5s; /* Starts immediately */
     
 }
 .icon {
   margin-left:1rem;
-  color:#2A4F6B;
+  color:white;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: color .2s ease-in-out;
+
+}
+
+.nv {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap:10px;
+  justify-content: center;
+  padding: 1rem 0;
 
 }
 
 .cart {
-  margin-left:1rem;
-  color:#FFDF4D;
+  margin-right:1rem ;
+  background-color:#FFDF4D;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: color .2s ease-in-out;
-  background-color: #2A4F6B;
-  padding:.5rem;
+  color: #2A4F6B;
+  padding:.4rem 1rem;
   border-radius: .5rem;
   transition: all .2s ease-in-out;
 }
-.cartbox {
-  margin:0 2rem;
-}
+
 .cart p {
   font-size: 15px;
   font-weight: bold;
@@ -72,10 +81,11 @@
 }
 
 .cart:hover {
-  color: #326c99;
-  background-color:#FFDF4D;
+  color: #FFDF4D;
+  background-color:#326c99;
 }
 .active {
+  color:#FFDF4D;
   font-weight: bolder!important;
 }
 
@@ -91,26 +101,30 @@
 }
 
 .box {
+  padding:0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .burger {
-  color:#2A4F6B;
+  color:white;
   cursor: pointer;
   visibility: hidden;
 }
 
 @media (max-width: 768px) {
   .header {
-height: auto;
 /* padding:.2rem .5rem; */
-padding:14px 0;
       
   }
   .logo {
-    min-width: 190px;
+    min-width: 180px;
+  }
+  .box {
+    width: 100%;
+    justify-content: flex-end;
+    gap:1rem;
   }
   .icon {
     color:white;
@@ -118,10 +132,10 @@ padding:14px 0;
   .ul {
     opacity: 0;
     cursor: pointer;
-    z-index: 10;
+    z-index: 25;
     visibility: hidden;
     flex-flow: column;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 100%;
@@ -136,12 +150,17 @@ padding:14px 0;
   }
   .ul .li {
     color: white;
+    font-size: 18px;
   }
   .burger {
     visibility: visible;
   }
   .icon {
     
+  }
+  .nv {
+    gap:1.2rem;
+    flex-flow: row;
   }
 }
 
