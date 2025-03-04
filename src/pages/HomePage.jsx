@@ -36,7 +36,7 @@ const HomePage = () => {
      
     </div>
     <div>
-      <h2>על למון דרופ</h2>
+     
     </div>
 
         

@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  width: 100vw;
     background-color: var(--brand-blue);
   z-index: 5;
 }
@@ -121,7 +122,7 @@
 
 @media (max-width: 768px) {
   .logo {
-    min-width: 180px;
+    min-width: 170px;
   }
   .box {
     width: 100%;
@@ -159,8 +160,15 @@
   }
 
   .nv {
-    gap:1.2rem;
+    /* gap:1.2rem; */
     flex-flow: row;
+  }
+  .cart {
+    margin-right: 0;
+    transform: scale(0.9);
+  }
+  .box {
+    padding: 0;
   }
 }
 
@@ -172,7 +180,7 @@
     transform: scale(1);
   }
   50%{
-    transform: scale(1.08);
+    transform: scale(1.06);
   }
   100%{
     transform: scale(1);
