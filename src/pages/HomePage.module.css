@@ -85,7 +85,9 @@
         width: 100%;
     }
     .text {
-        padding: 1.5rem 0;
+        font-size: 12px;
+        letter-spacing: .5px;
+        padding: 1rem 0;
     }
     
 }
