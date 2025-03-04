@@ -1,5 +1,5 @@
 .grid {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: grid; /* Enable grid layout */
     grid-template-columns: repeat(3, 1fr); /* Two items per row */
     gap: 25px; /* 10px gap between items (both horizontally and vertically) */
@@ -9,7 +9,7 @@
 
 @media (max-width: 768px) {
     .grid {
-        margin-top: 20px;
+        /* margin-top: 20px; */
         display: grid; /* Enable grid layout */
         grid-template-columns: repeat(1, 1fr); /* Two items per row */
         gap: 25px; /* 10px gap between items (both horizontally and vertically) */

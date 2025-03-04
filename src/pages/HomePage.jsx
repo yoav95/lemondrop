@@ -6,38 +6,38 @@ const HomePage = () => {
     <Page>
 
 
+    <div className={styles.bg}>
     <div className={styles.menu}>
       
-    <div  className={styles.menuItem}>
-    <Link to="/shop/everyday">
-    <div className={styles.color1}></div>
-          <img  src="./images/items/seat.JPG"  className={styles.image} />
-          <div className={styles.text}>לשימוש יומיומי</div>
-          </Link>
-     </div>
-     
-     
-     <div  className={styles.menuItem}>
-     <Link to="/shop/bikepacking">
-     <div className={styles.color1}></div>
-          <img  src="./images/items/framefull3.jpg"  className={styles.image} />
-          <div className={styles.text}>בייקפקינג</div>
-          </Link>
-     </div>
-     
-     
-     <div  className={styles.menuItem}>
-     <Link to="/shop/things">
-     <div className={styles.color1}></div>
-          <img src="./images/items/run3.JPG"  className={styles.image} />
-          <div className={styles.text}>מחוץ לאופניים</div>
-          </Link>
-     </div>
-     
+      <div  className={styles.menuItem}>
+      <Link to="/shop/everyday">
+      <div className={styles.color1}></div>
+            <img  src="./images/everyday.jpg"  className={styles.image} />
+            <div className={styles.text}>לשימוש יומיומי</div>
+            </Link>
+       </div>
+       
+       
+       <div  className={styles.menuItem}>
+       <Link to="/shop/bikepacking">
+       <div className={styles.color1}></div>
+            <img  src="./images/image.jpg"  className={styles.image} />
+            <div className={styles.text}>בייקפקינג</div>
+            </Link>
+       </div>
+       
+       
+       <div  className={styles.menuItem}>
+       <Link to="/shop/things">
+       <div className={styles.color1}></div>
+            <img src="./images/offbike.jpg"  className={styles.image} />
+            <div className={styles.text}>מחוץ לאופניים</div>
+            </Link>
+       </div>
+       
+      </div>
     </div>
-    <div>
-     
-    </div>
+    
 
         
     </Page>

@@ -36,7 +36,11 @@ function ItemPage() {
     
     return (
         <Page>
+          <div className={styles.topimg}>
+                <img src={product.img}/>
+              </div>
             <div className={styles.box}>
+              
             <div className={styles.text}>
             
             <h1>{product.name}</h1>

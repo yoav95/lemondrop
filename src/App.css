@@ -10,10 +10,11 @@ body {
   background-color: #F5F5F5;
 }
 :root {
-  --brand-blue: #1E3A56;
-  --brand-yellow: #FFDF4D;
+  /* --brand-blue: #1E3A56; */
+  --brand-blue:#27537f;
+  --brand-yellow: #f4ca53;
   --brand-darkeryellow: #dfc347;
-  --brand-lightblue:#83BCA9;
+  --brand-lightblue:#92AFD7;
   --brand-skyblue:#5DD9C1;
   --brand-pink:#D87CAC;
   --brand-darkpink:#b47d70;

@@ -2,7 +2,7 @@
   position: relative;
   width: 100vw;
     background-color: var(--brand-blue);
-  z-index: 5;
+  z-index: 16;
 }
 
 
@@ -47,6 +47,7 @@
 }
 
 .nv {
+  height: 180px;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -162,6 +163,7 @@
   .nv {
     /* gap:1.2rem; */
     flex-flow: row;
+    height: 100px;
   }
   .cart {
     margin-right: 0;

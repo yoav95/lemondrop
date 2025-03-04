@@ -1,7 +1,9 @@
 
   .cart {
+    
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 2rem;
     background-color: white;
     border-radius: 8px;
     padding: 20px;
@@ -62,4 +64,10 @@
     width: 100%; /* Make image fill the container */
     height: 100%;
     object-fit: cover; /* Ensure the image doesn't stretch */
+  }
+
+  @media (max-width: 768px) {
+    .cart {
+      margin-top: .5rem;
+    }
   }
