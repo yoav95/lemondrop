@@ -2,7 +2,7 @@
     margin-top: 10px;
     display: grid; /* Enable grid layout */
     grid-template-columns: repeat(3, 1fr); /* Two items per row */
-    gap: 20px; /* 10px gap between items (both horizontally and vertically) */
+    gap: 25px; /* 10px gap between items (both horizontally and vertically) */
     width: 100%; /* Make the grid fill the container's width */
     grid-auto-rows: auto; /* Rows will grow to fit their content */
 }
@@ -12,7 +12,7 @@
         margin-top: 20px;
         display: grid; /* Enable grid layout */
         grid-template-columns: repeat(1, 1fr); /* Two items per row */
-        gap: 14px; /* 10px gap between items (both horizontally and vertically) */
+        gap: 25px; /* 10px gap between items (both horizontally and vertically) */
         width: 100%; /* Make the grid fill the container's width */
         grid-auto-rows: auto; /* Rows will grow to fit their content */
     }

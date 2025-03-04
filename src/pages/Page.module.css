@@ -1,13 +1,10 @@
 .page {
-    /* padding-top: 10px; */
     padding-bottom: 80px;
     direction: rtl; /* Right-to-left text */
     text-align: right; /* Align the text to the right */
     font-size: 24px;
-    color:#2A4F6B;
-    /*  */
-    margin-top: 1rem;
-
+    color:var(--brand-blue);
+    margin-top: 2rem;
 }
 
 .page h1{
@@ -32,9 +29,7 @@
 
 
 @media (max-width: 768px) {
-    .page {
-    
-    }
+
     
     .page h1{
         width: 50%;

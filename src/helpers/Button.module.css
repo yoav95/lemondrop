@@ -1,6 +1,13 @@
 .button {
-    background-color:#2A4F6B ;
+    margin-top: 1rem;;
+    background-color:var(--brand-blue) ;
     padding:.5rem 1.4rem;
     color:white;
     border-radius: .8rem;
+    transition:all .2s ease-in-out;
+    display: inline;
+}
+.button:hover {
+    background-color: var(--brand-yellow);
+    color:var(--brand-blue);
 }

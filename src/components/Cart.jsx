@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from './Cart.module.css'
 import Page from "../pages/Page.jsx";
 import { useCart } from "../context/CartContext.jsx";
+import Button from "../helpers/Button.jsx";
 
 const Cart = () => {
   const { cartItems,getItemQuantity,increaseQuantity,decreaseQuantity } = useCart();
@@ -69,10 +70,8 @@ const Cart = () => {
       <div className={styles.carttotal}>
         Total: ${getTotalPrice().toFixed(2)}
       </div>
-
-      <button className={styles.checkoutbtn} onClick={handleCheckout}>
-        המשך לתשלום
-      </button>
+      <Button text="המשך לתשלום" handleClick={handleCheckout}/>
+      
     </div>
     </Page>
   );

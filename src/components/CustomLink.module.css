@@ -1,0 +1,92 @@
+
+
+.link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+    color:var(--brand-yellow)
+}
+
+/* Hide extra text */
+.mask {
+  position: relative;
+  padding: 0;
+  height: 20px;
+  overflow: hidden;
+}
+
+.linkContainer {
+  transition: transform 0.5s ease;
+}
+
+.title {
+  display: block;
+  line-height: 20px;
+  transition: transform 0.5s ease;
+}
+
+.linkTitle1 {
+  transform-origin: right center;
+}
+
+.linkTitle2 {
+  transform-origin: left center;
+  transform: rotate(20deg);
+}
+
+.linkIcon {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background: var(--background-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  position: absolute;
+  transition: transform 0.4s ease;
+}
+
+.icon:nth-child(2) {
+  transform: translate(-40px);
+}
+
+/* Hover Effects */
+.link:hover .linkContainer {
+  transform: translateY(-20px);
+}
+
+.link:hover .linkTitle1 {
+  transform: rotate(20deg);
+}
+
+.link:hover .linkTitle2 {
+  transform: rotate(0);
+}
+
+.link:hover .icon:first-child {
+  transform: translate(40px);
+}
+
+.link:hover .icon:nth-child(2) {
+  transform: translate(0px);
+}
+
+.active {
+  color:var(--brand-yellow);
+  font-weight: bolder;
+}

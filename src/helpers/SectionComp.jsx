@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './SectionComp.module.css'
 import { AiOutlineArrowLeft } from "react-icons/ai";const SectionComp = ({ children, heading, type }) => {
-    const [open, setOpen] = useState(type === 'h1' ? true : false)
+    const [open, setOpen] = useState(type === 'h1' ? false : false)
     const toggle = () => {
         setOpen((prev) => !prev)
     }

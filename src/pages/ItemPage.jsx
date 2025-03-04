@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useCart } from "../context/CartContext.jsx";
 import createOrder from "../helpers/createOrder.js";
 import { Toaster, toast } from "react-hot-toast";
+import Button from '../helpers/Button.jsx';
 
 
 function ItemPage() {
@@ -50,7 +51,8 @@ function ItemPage() {
           <div className={styles.control}>
           
             <h2 className={styles.price}>{product.price} ₪</h2>
-                <button onClick={() => handleAddToCart()}>הוסף לעגלה</button>
+            <Button text="הוסף לעגלה" handleClick={() => handleAddToCart()}/>
+                
             </div>
             
             </div>

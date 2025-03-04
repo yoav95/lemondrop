@@ -1,20 +1,11 @@
-import React from 'react'
 import Page from './Page'
 import styles from './HomePage.module.css'
-import Button from '../helpers/Botton'
-import Wrapper from '../helpers/Wrapper'
 import { Link } from 'react-router-dom'
 const HomePage = () => {
   return (
     <Page>
-        <div className={styles.homepagecontent}>
-        <div className={styles.image}><div className={styles.color}></div><img src="./images/image.jpg"/></div>
-        <div className={styles.card}>
-        
-        </div>
-        </div>
-    <div className={styles.box}>
-      <Wrapper>
+
+
     <div className={styles.menu}>
       
     <div  className={styles.menuItem}>
@@ -44,8 +35,10 @@ const HomePage = () => {
      </div>
      
     </div>
-    </Wrapper>
+    <div>
+      <h2>על למון דרופ</h2>
     </div>
+
         
     </Page>
     

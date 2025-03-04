@@ -5,10 +5,12 @@
     justify-content: flex-start;
     cursor: pointer;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding:1.4rem ;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.055); /* Soft and diffused shadow */
+    background-color: white;
+
 }
 
 .arrow {

@@ -1,16 +1,10 @@
 .header {
   position: relative;
-    background-color: #2A4F6B;
+    background-color: var(--brand-blue);
   z-index: 5;
 }
 
-.transparent {
-  background-color: transparent;
-}
 
-.header.blinking {
-  animation: blink 2.5s infinite ease-in-out; /* Apply blink animation */
-}
 
 .ul {
     display: flex;
@@ -32,7 +26,7 @@
  
 
   .li:hover {
-    color:#5F9DC0;
+    color:var(--brand-yellow);
   }
 
 .logo {
@@ -64,41 +58,48 @@
 
 .cart {
   margin-right:1rem ;
-  background-color:#FFDF4D;
+  background-color:var(--brand-yellow);
+  border:2px solid var(--brand-blue);
+  color:var(--brand-blue);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color .2s ease-in-out;
-  color: #2A4F6B;
-  padding:.4rem 1rem;
+  padding:.2rem 1rem;
   border-radius: .5rem;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
+  transform: scale(1);
 }
 
 .cart p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
-  margin-left: 5px;
 }
 
 .cart:hover {
-  color: #FFDF4D;
-  background-color:#326c99;
+  transform: scale(1.1);
+
+  
+}
+
+.carticon {
+  transform: scale(1.04);
+  transition:transform .4s ease-in-out;
+}
+
+.cart:hover .carticon {
+  transform: scale(1.4);
 }
 .active {
-  color:#FFDF4D;
+  color: var(--brand-yellow);
   font-weight: bolder!important;
 }
 
 .svg.popping {
   animation: pop 2.5s infinite ease-in-out;
 }
-.svg.popping {
-  /* animation: pop 2.5s infinite ease-in-out;  */
-}
 
 .icon:hover {
-  color:#5F9DC0;
+  color:var(--brand-lightblue);
 }
 
 .box {
@@ -114,11 +115,11 @@
   visibility: hidden;
 }
 
+.icon:hover {
+  color:var(--brand-yellow);
+}
+
 @media (max-width: 768px) {
-  .header {
-/* padding:.2rem .5rem; */
-      
-  }
   .logo {
     min-width: 180px;
   }
@@ -141,7 +142,7 @@
     left:0;
     width: 100%;
     height: 100%;
-    background-color: #2A4F6B;
+    background-color: var(--brand-blue);
     gap:20px;
     transition: .2s all ease-in-out;
   }
@@ -156,9 +157,7 @@
   .burger {
     visibility: visible;
   }
-  .icon {
-    
-  }
+
   .nv {
     gap:1.2rem;
     flex-flow: row;
@@ -166,24 +165,14 @@
 }
 
 
-@keyframes blink {
-  0% {
-    background-color: #2A4F6B; /* Initial color */
-  }
-  50% {
-    background-color: #326c99; /* Blinking color */
-  }
-  100% {
-    background-color: #2A4F6B; /* Back to initial color */
-  }
-}
+
 
 @keyframes pop {
   0% {
     transform: scale(1);
   }
   50%{
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
   100%{
     transform: scale(1);
