@@ -10,6 +10,7 @@ import './App.css'
 import InfoPage from './pages/InfoPage.jsx'
 import Cart from './components/Cart.jsx'
 import { CartProvider } from "./context/CartContext";
+import { LanguageProvider } from './context/LanguageContext.jsx'
 
 function App() {
  
@@ -17,6 +18,7 @@ function App() {
     <>
       {/* <Wrapper> */}
         <CartProvider>
+          <LanguageProvider>
         <Navbar />
         <Routes>
         <Route path='/' element={<HomePage />}/>
@@ -28,6 +30,7 @@ function App() {
           <Route path="/shop/:type" element={<ShopPage />} /> 
           <Route path="/shop/item/:id" element={<ItemPage />} />
         </Routes>
+        </LanguageProvider>
         </CartProvider>
         {/* <ShopPage /> */}
         {/* <ItemPage /> */}

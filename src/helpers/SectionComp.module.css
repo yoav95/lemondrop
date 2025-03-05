@@ -13,6 +13,10 @@
 
 }
 
+.comp h1 {
+    font-size: 22px;
+}
+
 .arrow {
     width: 100%;
     display: flex;

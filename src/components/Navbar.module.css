@@ -16,6 +16,7 @@
   }
   
 .li {
+  list-style: none;
     padding:10px;
     margin-left: 20px; /* Space between list items */
     font-size: 15px;
@@ -47,6 +48,7 @@
 }
 
 .nv {
+  position: relative;
   height: 180px;
   width: 100%;
   display: flex;
@@ -78,9 +80,19 @@
 }
 
 .cart:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); 
+}
 
-  
+.lang {
+  position: absolute;
+  top:0;
+  right: 0;
+  cursor: pointer;
+  padding:0 1rem;
+  top:0;
+  right:0;
+  color:white;
+  padding: .5rem;
 }
 
 .carticon {
@@ -123,12 +135,12 @@
 
 @media (max-width: 768px) {
   .logo {
-    min-width: 170px;
+    min-width: 180px;
   }
   .box {
     width: 100%;
     justify-content: flex-end;
-    gap:1rem;
+    gap:.3rem;
   }
   .icon {
     color:white;
@@ -162,6 +174,7 @@
 
   .nv {
     /* gap:1.2rem; */
+    padding: 0 .4rem;
     flex-flow: row;
     height: 100px;
   }

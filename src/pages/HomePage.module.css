@@ -1,6 +1,7 @@
 
 .bg {
-    background-color: var(--brand-blue);
+    /* background-color: var(--brand-blue); */
+    background: linear-gradient(to bottom, var(--brand-blue) 30%, var(--brand-lightblue) 100%);
     padding:1rem 1rem;
     padding-bottom: 2rem;
     position: absolute;
@@ -109,7 +110,7 @@
     width: 100%;
 }
     .menuItem {
-        border-radius: 1rem 1rem 0 0;
+        border-radius: 1rem ;
         height: 120px;
         
     }

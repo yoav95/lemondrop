@@ -58,7 +58,7 @@
 .icon {
   display: block;
   position: absolute;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
 }
 
 .icon:nth-child(2) {

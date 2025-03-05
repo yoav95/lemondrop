@@ -27,10 +27,6 @@ function ItemPage() {
       addToCart(order)
       toast.success("הפריט נוסף לעגלה!");
     }
-
-    const handleColorChange = (event) => {
-      setSelectedColor(event.target.value);
-    };
     const itemsArray = bagsData.bags;
     const product = itemsArray.find(item => item.id === parseInt(id))
     
@@ -45,13 +41,44 @@ function ItemPage() {
             
             <h1>{product.name}</h1>
             <p>{product.details}</p>
-            <div className={styles.color}>
-              <label>בחירת צבע</label>
-            <select id="type" name="color" value={selectedColor} onChange={handleColorChange}>
-              {product.colors.map((color) => (<option key={color} value={color}>{color}</option>))}
-  
-</select>
-            </div>
+            <section className={styles.selection}>
+            <h2>התאמה אישית</h2>
+            
+            <label htmlFor="zipper">סוג רוכסן</label>
+            <select id="zipper">
+                <option value="metal">ykk רגיל</option>
+                <option value="nylon">ykk דוחה מים</option>
+                <option value="plastic">ykk עמיד</option>
+            </select>
+            
+            <label htmlFor="pocket">הוספת כיס</label>
+            <select id="pocket">
+                <option value="yes">כן</option>
+                <option value="no">לא</option>
+            </select>
+            
+            <label htmlFor="fabric">סוג בד עיקרי</label>
+            <select id="fabric">
+                <option value="cordura">קורדורה</option>
+                <option value="xpac">XPac</option>
+                <option value="oxford600d">אוקספורד 600</option>
+                <option value="oxford900d">אוקספורד 900</option>
+            </select>
+            <label htmlFor="colorDescription">העדפת צבעים:</label>
+            <textarea
+                id="colorDescription"
+                className={styles.colordescription}
+                placeholder=""
+            />
+            
+            
+            <label htmlFor="size">גודל:</label>
+            <select id="size">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+            </select>
+        </section>
           <div className={styles.control}>
           
             <h2 className={styles.price}>{product.price} ₪</h2>

@@ -15,7 +15,7 @@ function Item({id, name, price, img, details,handler }) {
         <h2>{name}</h2>
         <TruncatedText text={details} maxLength={100} />
 
-        <p>{price} ₪ </p>
+        <p className={styles.price}>{price} ₪ </p>
         </div>
     </div>
 

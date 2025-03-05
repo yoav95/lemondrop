@@ -7,7 +7,7 @@
     grid-auto-rows: auto; /* Rows will grow to fit their content */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .grid {
         /* margin-top: 20px; */
         display: grid; /* Enable grid layout */
@@ -15,5 +15,10 @@
         gap: 25px; /* 10px gap between items (both horizontally and vertically) */
         width: 100%; /* Make the grid fill the container's width */
         grid-auto-rows: auto; /* Rows will grow to fit their content */
+    }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
     }
 }
