@@ -2,7 +2,6 @@ import ItemPage from './pages/ItemPage.jsx'
 import Navbar from './components/Navbar.jsx'
 import ShopPage from './pages/ShopPage.jsx'
 import { Routes, Route } from 'react-router-dom'
-import Wrapper from './helpers/Wrapper.jsx'
 import HomePage from './pages/HomePage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import CustomPage from './pages/CustomPage.jsx'
@@ -16,7 +15,6 @@ function App() {
  
   return (
     <>
-      {/* <Wrapper> */}
         <CartProvider>
           <LanguageProvider>
         <Navbar />
@@ -32,9 +30,6 @@ function App() {
         </Routes>
         </LanguageProvider>
         </CartProvider>
-        {/* <ShopPage /> */}
-        {/* <ItemPage /> */}
-      {/* </Wrapper> */}
     </>
   )
 }

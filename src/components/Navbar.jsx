@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { NavLink, Link, useLocation  } from "react-router-dom";
 import { ReactComponent as ReactLogo } from '../assets/logo.svg'
 import { useCart } from "../context/CartContext.jsx";
-import Wrapper from "../helpers/Wrapper";
+import Wrapper from "../components/Wrapper";
 import { FaInstagram  } from "react-icons/fa";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { useEffect, useState } from "react";

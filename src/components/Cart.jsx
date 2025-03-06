@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from './Cart.module.css'
 import Page from "../pages/Page.jsx";
 import { useCart } from "../context/CartContext.jsx";
-import Button from "../helpers/Button.jsx";
+import Button from "../components/Button.jsx";
 
 const Cart = () => {
   const { cartItems,getItemQuantity,increaseQuantity,decreaseQuantity } = useCart();

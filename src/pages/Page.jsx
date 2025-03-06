@@ -1,5 +1,5 @@
 import styles from './Page.module.css'
-import Wrapper from '../helpers/Wrapper'
+import Wrapper from '../components/Wrapper'
 
 function Page({children}) {
     return (

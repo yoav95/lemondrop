@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useCart } from "../context/CartContext.jsx";
 import createOrder from "../helpers/createOrder.js";
 import { Toaster, toast } from "react-hot-toast";
-import Button from '../helpers/Button.jsx';
+import Button from '../components/Button.jsx';
 
 
 function ItemPage() {
