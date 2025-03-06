@@ -32,15 +32,14 @@ function ItemPage() {
     
     return (
         <Page>
-          <div className={styles.topimg}>
-                <img src={product.img}/>
-              </div>
             <div className={styles.box}>
               
             <div className={styles.text}>
             
             <h1>{product.name}</h1>
             <p>{product.details}</p>
+            <label>מידות</label>
+            <div className={styles.sizes}><img src={product.sizeimg} onClick={() => handleImageClick(product.sizeimg)}/></div>
             <section className={styles.selection}>
             <h2>התאמה אישית</h2>
             

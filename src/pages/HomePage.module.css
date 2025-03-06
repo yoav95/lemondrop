@@ -1,7 +1,6 @@
 
 .bg {
-    /* background-color: var(--brand-blue); */
-    background: linear-gradient(to bottom, var(--brand-blue) 30%, var(--brand-lightblue) 100%);
+    background-color: var(--brand-blue);
     padding:1rem 1rem;
     padding-bottom: 2rem;
     position: absolute;

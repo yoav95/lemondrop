@@ -5,7 +5,7 @@
       "name": "תיק שלדה עליון",
       "price": 230,
       "img": "/images/items/toptube/1.jpg",
-      "colors":["90S Fantasy", "Vine Tree"],
+      "sizeimg":"/images/items/toptube/size.jpg",
       "images":["/images/items/toptube/7.jpg","/images/items/toptube/6.jpg","/images/items/toptube/3.jpg","/images/items/toptube/4.jpg", "/images/items/toptube/1.jpg" , "/images/items/toptube/size.jpg"],
       "details": "תיק שלדה עליון מתלבש על הצינור העליון של השלדה ומאפשר גישה נוכה תוך כדי נסיעה. התיק ניתן להתאמה אישית נוספת",
       "type":["bikepacking", "everyday"]
@@ -16,7 +16,7 @@
       "name": "תיק סטם",
       "price": 200,
       "img": "/images/items/stembag/stembag1.jpg",
-      "colors":["90S Fantasy", "Vine Tree"],
+      "sizeimg":"/images/items/stembag/size.jpg",
       "images":["/images/items/stembag/stembag2.jpg","/images/items/stembag/stembag3.jpg","/images/items/stembag/stembag1.jpg","/images/items/stembag/stembag4.JPG"],
       "details": "אחד התיקים הכי מרכזיים בכל חויית בייקפקינג. התאמה אישית של התיק לשלדת האופניים לא רק תנצל מקום, אלא גם תיצור מראה שיסחוט מחמאות",
       "type":["bikepacking", "everyday"]
@@ -26,7 +26,7 @@
       "name": "תיק כידון",
       "price": 320,
       "img": "/images/items/handlebar/2.jpg",
-      "colors":["90S Fantasy", "Vine Tree"],
+      "sizeimg":"/images/items/toptube/size.jpg",
       "images":["/images/items/framefull1.jpg","/images/items/framefull2.jpg","/images/items/framefull3.jpg","/images/items/framefull4.jpg"],
       "details": "אחד התיקים הכי מרכזיים בכל חויית בייקפקינג. התאמה אישית של התיק לשלדת האופניים לא רק תנצל מקום, אלא גם תיצור מראה שיסחוט מחמאות",
       "type":["bikepacking", "everyday"]
