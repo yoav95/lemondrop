@@ -2,21 +2,27 @@
   "bags": [
     {
       "id": 1,
-      "name": "PocketDrop",
-      "price": 170,
-      "img": "/images/items/pocketdrop/small/5.jpg",
-      "images":["/images/items/pocketdrop/small/1.jpg", "/images/items/pocketdrop/small/3.jpg","/images/items/pocketdrop/small/4.jpg", "/images/items/pocketdrop/small/5.jpg"],
-      "details": "\nתיק צד קומפקטי בעל עיצוב מינימליסטי ושימושי לנשיאת חפצים יומיומיים.\n\nסגירה מרכזית עם חוט גומי. מקדימה תא רוכסן ותא רשת, מאחורה תא אלסטי.\nרצועת חוט מתכווננת מבטיחה התאמה נוחה לנשיאה על הכתף או בהצלבה. אידיאלי לטיולים עירוניים, רכיבה על אופניים או לכל רגע שבו אתה זקוק רק לפריטים החיוניים.\n\n🔹 מידות:\n- רוחב: 11 ס\"מ\n- גובה: 21 ס\"מ (כולל רצועת סגירה)\n\n🔹 תא רוכסן קדמי:\n- רוחב: 11 ס\"מ\n- גובה: 10 סנטימטר\n\n🔹 תא אלסטי אחורי:\n- רוחב 11 ס\"מ\n- גובה: 15 ס\"מ\n\n✏️ התאמה אישית:\nניתן להתאים אישית מספר מרכיבים בתיק:\n✅ סוג בד\n✅ צבעים\n✅ ",
-      "type":["things"]
+      "title": "PocketDrop Pine Tree",
+      "details":"תיק צד קומפקטי בעל עיצוב מינימליסטי ושימושי לנשיאת חפצים יומיומיים.  בצד הקדמי תא רוכסן ותא רשת קטן, בצד האחורי תא פתוח שיכול להכין פלאפון או כל חפץ לשליפה מהירה.  סגירה מרכזית של התיק עם הידוק חוט, מאפשר גישה קלה לחפצים.",
+      "dimensions":"מידות:\nרוחב: 11 סנטימטר\nגובה: 21 סנטימטר",
+      "price": 150,
+      "image":"/images/items/pocketdrop/pinetree/small/small6.jpg",
+      "simages":["/images/items/pocketdrop/pinetree/small/small1.jpg", "/images/items/pocketdrop/pinetree/small/small6.jpg", "/images/items/pocketdrop/pinetree/small/small3.jpg", "/images/items/pocketdrop/pinetree/small/small5.jpg","/images/items/pocketdrop/pinetree/small/small4.jpg","/images/items/pocketdrop/pinetree/small/small2.jpg"],
+      "bimages":[],
+      "type":["things"],
+      "materials":""
     },
     {
-      "id": 1,
-      "name": "Custom PocketDrop",
-      "price": 210,
-      "img": "/images/items/pocketdrop/small/custom.jpg",
-      "images":["/images/items/pocketdrop/small/1.jpg", "/images/items/pocketdrop/small/3.jpg","/images/items/pocketdrop/small/4.jpg", "/images/items/pocketdrop/small/5.jpg"],
-      "details": "\nתיק צד קומפקטי בעל עיצוב מינימליסטי ושימושי לנשיאת חפצים יומיומיים.\n\nסגירה מרכזית עם חוט גומי. מקדימה תא רוכסן ותא רשת, מאחורה תא אלסטי.\nרצועת חוט מתכווננת מבטיחה התאמה נוחה לנשיאה על הכתף או בהצלבה. אידיאלי לטיולים עירוניים, רכיבה על אופניים או לכל רגע שבו אתה זקוק רק לפריטים החיוניים.\n\n🔹 מידות:\n- רוחב: 11 ס\"מ\n- גובה: 21 ס\"מ (כולל רצועת סגירה)\n\n🔹 תא רוכסן קדמי:\n- רוחב: 11 ס\"מ\n- גובה: 10 סנטימטר\n\n🔹 תא אלסטי אחורי:\n- רוחב 11 ס\"מ\n- גובה: 15 ס\"מ\n\n✏️ התאמה אישית:\nניתן להתאים אישית מספר מרכיבים בתיק:\n✅ סוג בד\n✅ צבעים\n✅ ",
-      "type":["things"]
+      "id": 2,
+      "title": "PocketDrop Space Wonder",
+      "details":"תיק צד קומפקטי בעל עיצוב מינימליסטי ושימושי לנשיאת חפצים יומיומיים.  בצד הקדמי תא רוכסן ותא רשת קטן, בצד האחורי תא פתוח שיכול להכין פלאפון או כל חפץ לשליפה מהירה.  סגירה מרכזית של התיק עם הידוק חוט, מאפשר גישה קלה לחפצים.",
+      "dimensions":"מידות:\nרוחב: 11 סנטימטר\nגובה: 21 סנטימטר",
+      "price": 150,
+      "image":"/images/items/pocketdrop/spacewonder/small/small4.jpg",
+      "simages":["/images/items/pocketdrop/spacewonder/small/small1.jpg", "/images/items/pocketdrop/spacewonder/small/small6.jpg", "/images/items/pocketdrop/spacewonder/small/small3.jpg", "/images/items/pocketdrop/spacewonder/small/small5.jpg","/images/items/pocketdrop/spacewonder/small/small4.jpg","/images/items/pocketdrop/spacewonder/small/small2.jpg"],
+      "bimages":[],
+      "type":["things"],
+      "materials":""
     }
     
   ]

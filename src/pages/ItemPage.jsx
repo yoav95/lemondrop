@@ -35,41 +35,9 @@ function ItemPage() {
               
             <div className={styles.text}>
             
-            <h1>{product.name}</h1>
+            <h1>{product.title}</h1>
             <p>{product.details}</p>
-            <section className={styles.selection}>
-            <h2>התאמה אישית</h2>
             
-            <label htmlFor="zipper">סוג רוכסן</label>
-            <select id="zipper">
-                <option value="metal">ykk רגיל</option>
-                <option value="nylon">ykk דוחה מים</option>
-                <option value="plastic">ykk עמיד</option>
-            </select>
-            
-            
-            <label htmlFor="fabric">סוג בד עיקרי</label>
-            <select id="fabric">
-                <option value="cordura">קורדורה</option>
-                <option value="xpac">XPac</option>
-                <option value="oxford600d">אוקספורד 600</option>
-                <option value="oxford900d">אוקספורד 900</option>
-            </select>
-            <label htmlFor="colorDescription">העדפת צבע וסיגנון</label>
-            <textarea
-                id="colorDescription"
-                className={styles.colordescription}
-                placeholder="תאר\י בכמה מילים את תיק החלומות שלך"
-            />
-            
-            
-            <label htmlFor="size">גודל:</label>
-            <select id="size">
-                <option value="s">S</option>
-                <option value="m">M</option>
-                <option value="l">L</option>
-            </select>
-        </section>
           <div className={styles.control}>
           
             <h2 className={styles.price}>{product.price} ₪</h2>
@@ -79,7 +47,7 @@ function ItemPage() {
             
             </div>
             <div className={styles.images}>
-              {product.images.map((img) => (
+              {product.simages.map((img) => (
                 <img key={`${product.name} ${product.id}`} onClick={() => handleImageClick(img)} src={img}/>
               ))}
 

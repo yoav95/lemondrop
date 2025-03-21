@@ -21,7 +21,7 @@ function ItemsView({type}) {
     return (
       <div className={styles.grid}>
         {filteredItems.map(item => 
-          (<Item handler={triggerSound} name={item.name} colors={item.colors} price={item.price} key={item.id} id={item.id} img={item.img} details={item.details}/>)
+          (<Item handler={triggerSound} title={item.title} colors={item.colors} price={item.price} key={item.id} id={item.id} img={item.image} details={item.details}/>)
       )}
 
         <SoundPlayer soundFile="/sounds/drop.mp3" play={playSound} />
